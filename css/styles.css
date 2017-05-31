@@ -1,0 +1,94 @@
+*:not(body):not(html), *:before, *:after {
+  box-sizing: border-box;
+  /*border: 1px dashed black;*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero, .box-1, .box-2 {
+  margin: 2.5vh 2.5vw;
+
+}
+
+.hero {
+  background: teal;
+}
+
+.box-1 {
+  background: orange;
+}
+
+.box-2 {
+  background: purple;
+}
+
+@media screen and (min-width: 1300px) {
+  .hero, .box-1, .box-2 {
+    margin: 0;
+
+  }
+
+  .all-divs {
+    margin: 2.5vh 2vw;
+  }
+
+  .hero {
+    margin-right: 2vw;
+    width: 70vw;
+    height: 95vh;
+    float: left;
+    clear: left;
+  }
+
+  .box-1, .box-2 {
+    height: 46.25vh;
+    width: 24vw;
+    float: right;
+  }
+
+  .box-1 {
+    margin-bottom: 2.5vh;
+  }
+
+
+}
+
+@media screen and (max-width: 1299px) and (min-width:415px) {
+  .hero {
+    width: 95vw;
+    height: 50vh;
+  }
+
+  .boxes {
+    margin: 0 1.25vw;
+  }
+
+  .box-1, .box-2 {
+    width: 46.25vw;
+    height: 42.5vh;
+    margin: 0 1.25vw 2.5vh 1.25vw;
+    float: left;
+
+  }
+
+}
+
+@media screen and (max-width: 414px) {
+
+  .hero {
+    width: 95vw;
+    height: 50vh;
+  }
+
+  .box-1, .box-2 {
+    width: 95vw;
+    height: 20vh;
+    margin: 0 2.5vw 2.5vh 2.5vw;
+  }
+
+
+
+}
